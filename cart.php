@@ -1,25 +1,10 @@
  <?php 
 	include 'inc/header.php';
 	// include 'inc/slider.php';
+	include 'controllers/cartController.php';
  ?>
  <style><?php include 'css/style.css'; ?></style>
-<?php
-    if(isset($_GET['cartid'])){
-        $cartid = $_GET['cartid']; 
-        $delcart = $ct->del_product_cart($cartid);
-    }
-        
-	if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])){
-        // LẤY DỮ LIỆU TỪ PHƯƠNG THỨC Ở FORM POST
-        $cartId = $_POST['cartId'];
-        $proId = $_POST['proId'];
-        $quantity = $_POST['quantity'];
-        $update_quantity_Cart = $ct -> update_quantity_Cart($proId,$cartId, $quantity); // hàm check catName khi submit lên
-    	if ($quantity <= 0) {
-    		$delcart = $ct->del_product_cart($cartId);
-    	}
-    } 
- ?>
+
  <?php
 	if(!isset($_GET['id'])){
 		echo "<meta http-equiv='refresh' content='0;URL=?id=live'>";
