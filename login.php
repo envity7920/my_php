@@ -2,6 +2,7 @@
 	include 'inc/header.php';
 	// include 'inc/slider.php';
  ?>
+ 
  <?php 
 	$login_check = Session::get('customer_login');
 	if ($login_check) {
@@ -90,7 +91,7 @@
 		    	</td>
 		    </tr> 
 		    </tbody></table> 
-		   <div class="search"><div><input type="submit" name="submit" class"grey" value="Create account" style="
+		   <div class="search"><div><input type="submit" name="submit" class="grey" value="Create account" style="
     background: #ffffff;
 "></div></div>
 		    
@@ -105,3 +106,5 @@
 <?php 
 	include 'inc/footer.php';
  ?>
+  <style><?php include 'css/style.css'; ?></style>
+

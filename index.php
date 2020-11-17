@@ -60,3 +60,4 @@
 <?php 
 	include 'inc/footer.php';
  ?>
+ <style><?php include 'css/style.css'; ?></style>

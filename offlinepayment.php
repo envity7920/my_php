@@ -2,6 +2,7 @@
 	include 'inc/header.php';
 	// include 'inc/slider.php';
  ?>
+ <style><?php include 'css/style.css'; ?></style>
 <?php 
 	if(isset($_GET['orderid']) && $_GET['orderid']=='order'){
        $customer_id = Session::get('customer_id');
@@ -202,3 +203,4 @@
 <?php 
 	include 'inc/footer.php';
  ?>
+  <style><?php include 'css/style.css'; ?></style>

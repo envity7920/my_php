@@ -3,6 +3,7 @@
     include 'lib/session.php';
     Session::init();
 ?>
+
 <?php
 	
 	include 'lib/database.php';

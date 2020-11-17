@@ -2,6 +2,8 @@
 	include 'inc/header.php';
 	// include 'inc/slider.php';
  ?>
+  <style><?php include 'css/style.css'; ?></style>
+
  <?php 
 
     if(isset($_GET['proid'])){

@@ -2,6 +2,8 @@
 	include 'inc/header.php';
 	include 'inc/slider.php';
  ?>
+  <style><?php include 'css/style.css'; ?></style>
+
 
  <div class="main">
     <div class="content">

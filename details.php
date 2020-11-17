@@ -2,6 +2,7 @@
 	include 'inc/header.php';
 	// include 'inc/slider.php';
  ?>
+ <style><?php include 'css/style.css'; ?></style>
 <?php 
 	if(!isset($_GET['proid']) || $_GET['proid'] == NULL){
         echo "<script> window.location = '404.php' </script>";
@@ -83,7 +84,7 @@
 	
 					$login_check = Session::get('customer_login'); 
 						if($login_check){
-							echo '<input type="submit" class="buysubmit" name="compare" value="Compare Products"/>'.'  ';
+							echo '<input type="submit" class="sub-submit" name="compare" value="Compare Products"/>'.'  ';
 							
 						}else{
 							echo '';
@@ -104,7 +105,7 @@
 					$login_check = Session::get('customer_login'); 
 						if($login_check){
 							
-							echo '<input type="submit" class="buysubmit" name="wishlist" value="Add to wishlist" />';
+							echo '<input type="submit" class="sub-submit" name="wishlist" value="Add to wishlist" />';
 						}else{
 							echo '';
 						}
